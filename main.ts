@@ -6,16 +6,14 @@ module.exports = class FolderMarkdownCombinerPlugin extends Plugin {
 	async onload() {
 		this.registerEvent(
 			this.app.workspace.on('file-menu', (menu: any, folder: TFolder) => {
-				if (folder instanceof TFolder) {
-					menu.addItem((item: any) => {
-						item
-							.setTitle('Combine Markdown Files')
-							.setIcon('files')
-							.onClick(async () => {
-								await this.combineMarkdownInFolder(folder);
-							});
-					});
-				}
+				menu.addItem((item: any) => {
+					item
+						.setTitle('Combine Markdown Files')
+						.setIcon('files')
+						.onClick(async () => {
+							await this.combineMarkdownInFolder(folder);
+						});
+				});
 			})
 		);
 	}
