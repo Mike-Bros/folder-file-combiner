@@ -1,7 +1,7 @@
 {
 	"id": "folder-file-combiner",
 	"name": "Folder File Combiner",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"minAppVersion": "0.15.0",
 	"description": "Combines all files in a folder into a single file.",
 	"author": "Mike Bros",
