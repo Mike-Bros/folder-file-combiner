@@ -1,6 +1,6 @@
 {
 	"name": "folder-file-combiner",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Combines all files in a folder into a single file.",
 	"main": "main.js",
 	"scripts": {
