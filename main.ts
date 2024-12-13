@@ -156,8 +156,10 @@ module.exports = class FolderMarkdownCombinerPlugin extends Plugin {
 };
 
 class FolderCombinerSettingTab extends PluginSettingTab {
+	// @ts-ignore
 	plugin: FolderMarkdownCombinerPlugin;
 
+	// @ts-ignore
 	constructor(app: App, plugin: FolderMarkdownCombinerPlugin) {
 		super(app, plugin);
 		this.plugin = plugin;
