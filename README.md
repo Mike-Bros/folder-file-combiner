@@ -16,7 +16,7 @@ An Obsidian plugin that allows you to combine markdown files, either from a spec
 
 ### Manual Installation
 
-1. Download the latest release from the [Releases page](https://github.com/YourUsername/folder-file-combiner/releases)
+1. Download the latest release from the [Releases page](https://github.com/Mike-Bros/folder-file-combiner/releases)
 2. Extract the files into your vault's plugins folder: `VaultFolder/.obsidian/plugins/folder-file-combiner/`
 3. Enable the plugin in Obsidian settings
 
