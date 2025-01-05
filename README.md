@@ -60,28 +60,6 @@ Setup:
 3. `npm run dev` for development builds
 4. `npm run build` for production builds
 
-## Changelog
-
-### 1.1.0
-- Added directory structure context option
-- Added customizable filename suffix options
-	- Timestamp formatting using Moment.js
-	- Random string generation with configurable length and characters
-- Added live preview for timestamp format
-- Improved type safety and error handling
-- Fixed various edge cases in file combination
-
-### 1.0.1
-- Added ability to combine all markdown files from entire vault
-- Added ribbon icon with toggle option in settings
-- Added command palette integration
-- Improved file sorting for consistent output
-
-### 1.0.0
-- Initial release
-- Folder-specific file combining
-- Right-click menu integration
-
 ## License
 
 MIT
