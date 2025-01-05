@@ -6,6 +6,10 @@ An Obsidian plugin that allows you to combine markdown files, either from a spec
 
 - Right-click on a folder to combine all markdown files within that folder
 - Use the ribbon icon or command palette to combine all markdown files from your entire vault
+- Option to include directory structure context in combined files
+- Flexible filename suffix options:
+	- Timestamp with customizable Moment.js format
+	- Random string generation with configurable length and character set
 - Toggle the ribbon icon visibility in settings
 - Creates a new markdown file with contents from all files
 - Preserves original file names/paths as headers
@@ -25,19 +29,24 @@ An Obsidian plugin that allows you to combine markdown files, either from a spec
 ### Combining Files in a Specific Folder
 1. Right-click on any folder in Obsidian
 2. Select "Combine Markdown Files"
-3. A new file will be created in that folder named `foldername_combined.md`
+3. A new file will be created in that folder with a name based on your suffix settings
 
 ### Combining All Vault Files
 You have two options:
 1. Click the ribbon icon (file stack) in the left sidebar
 2. Use the command palette (Ctrl/Cmd + P) and search for "Combine All Markdown Files"
 
-The combined vault file will be created in your vault root as `vault_combined_TIMESTAMP.md`
+The combined vault file will be created in your vault root with a name based on your suffix settings
 
 ### Settings
 
 You can configure the plugin in Settings > Folder File Combiner:
 - Toggle the ribbon icon visibility
+- Include directory structure context in combined files
+- Choose filename suffix style:
+	- Timestamp: Customize format using Moment.js patterns (e.g., YYYY-MM-DD-HH-mm-ss)
+	- Random: Configure length and character set for random string generation
+- Live preview of timestamp format
 
 ## Development
 
@@ -52,6 +61,15 @@ Setup:
 4. `npm run build` for production builds
 
 ## Changelog
+
+### 1.1.0
+- Added directory structure context option
+- Added customizable filename suffix options
+	- Timestamp formatting using Moment.js
+	- Random string generation with configurable length and characters
+- Added live preview for timestamp format
+- Improved type safety and error handling
+- Fixed various edge cases in file combination
 
 ### 1.0.1
 - Added ability to combine all markdown files from entire vault
